@@ -46,7 +46,7 @@ Dart | nominal | static | gradual | No
 Python | nominal | dynamic | inferred / optional manifest | No
 Java | nominal | static | manifest | No
 Go | structural | static | partially inferred | No
-Rust | mostly nominal | static | manifest / optional inferred | Yes
+Rust | mostly nominal | static | manifest / optional inferred | Yes ([enum](https://doc.rust-lang.org/std/keyword.enum.html))
 C++ | nominal | static | manifest / optional inferred | No
 C | nominal | static | manifest | No
 
