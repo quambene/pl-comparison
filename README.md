@@ -18,7 +18,7 @@ Javascript | JIT | Yes (web browser, node.js) | Yes | -
 Typescript | JIT | Yes (web browser, node.js) | Yes | -
 Dart | JIT/AOT | Yes (web) / No (mobile) | Yes | -
 Python | interpreted | Yes | Yes ([reference counting](https://en.wikipedia.org/wiki/Reference_counting)) | -
-Java | JIT | Yes ([JVM](https://en.wikipedia.org/wiki/Java_virtual_machine)) | Yes ([tracing](https://en.wikipedia.org/wiki/Tracing_garbage_collection)) | -
+Java | JIT | Yes ([JVM](https://en.wikipedia.org/wiki/Java_virtual_machine)) | Yes ([tracing](https://en.wikipedia.org/wiki/Tracing_garbage_collection)) | faster
 Go | AOT | No | Yes | faster
 Rust | AOT | No | No | slower
 C++ | AOT | No | No | slower
