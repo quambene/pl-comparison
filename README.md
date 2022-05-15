@@ -81,7 +81,7 @@ C | No | No | No | Yes
 
 Language  | Raw pointer | Smart pointer | References
 -- | -- | -- | --
-Rust | Partially ([unsafe Rust](https://doc.rust-lang.org/book/ch19-01-unsafe-rust.html#unsafe-rust)) | Yes (`std::boxed::Box`, `std::rc::Rc`, `std::sync::Arc`) | Yes
+Rust | Partially (in safe Rust; cf. also [unsafe Rust](https://doc.rust-lang.org/book/ch19-01-unsafe-rust.html#unsafe-rust)) | Yes (`std::boxed::Box`, `std::rc::Rc`, `std::sync::Arc`) | Yes
 C++ | Yes | Yes (`std::unique_ptr`, `std::shared_ptr`) | Yes
 C | Yes| No | No
 
