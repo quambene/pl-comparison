@@ -87,13 +87,13 @@ C | Yes| No | No
 
 ## Memory safety
 
-Language | Double free | Use after free (dangling pointer) | Null dereferencing
--- | -- | -- | --
-Java | No (GC) | No (GC) | Yes (`NullPointerException`)
-Go | No (GC) | No (GC) | Yes (`nil pointer dereference`)
-Rust | No (ownership rules) | No (borrowing rules) | No (`std::option::Option`)
-C++ | Yes | Yes | Yes
-C | Yes | Yes | Yes
+Language | Double free | Use after free (dangling pointer) | Null dereferencing | Buffer overflow
+-- | -- | -- | -- | --
+Java | No (GC) | No (GC) | Yes (`NullPointerException`) | No
+Go | No (GC) | No (GC) | Yes (`nil pointer dereference`) | No
+Rust | No (ownership rules) | No (borrowing rules) | No (`std::option::Option`) | No
+C++ | Yes | Yes | Yes | Yes
+C | Yes | Yes | Yes | Yes
 
 [Ownership rules](https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html#ownership-rules):
 
