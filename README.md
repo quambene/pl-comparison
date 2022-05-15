@@ -1,5 +1,7 @@
 # Programming Language Comparison Cheat Sheet
 
+Pros and cons of widely used programming languages.
+
 - [Performance](#performance)
 - [Safety](#safety)
 - [Type system](#type-system)
@@ -83,9 +85,10 @@ C | No | Yes| No
 
 ## Memory safety
 
-Language | double free | use after free (dangling pointer) | null dereferencing (seg fault)
+Language | double free | use after free (dangling pointer) | null dereferencing
 -- | -- | -- | --
 Java | No (GC) | No (GC) | Yes (`NullPointerException`)
+Go | No (GC) | No (GC) | Yes (`nil pointer dereference`)
 Rust | No (ownership rules) | No (borrowing rules) | No (`std::option::Option`)
 C++ | Yes | Yes | Yes
 C | Yes | Yes | Yes
@@ -103,11 +106,11 @@ C | Yes | Yes | Yes
 
 ## Tooling
 
-Language | Package manager | Formatter | Testing
--- | -- | -- | --
-Python | `pip`, `venv`, `pyenv`, `setuptools` | `autopep8` | `pytest`
-Go | `go` | `go fmt` | `go test`
-Rust | `cargo` | `cargo fmt` | `cargo test`| `cargo`
+Language | Package manager | Toolchain management | Formatter | Testing
+-- | -- | -- | -- | --
+Python | `pip`, `venv`, `setuptools` | `pyenv` | `autopep8` | `pytest`
+Go | `go` | `go` | `go fmt` | `go test`
+Rust | `cargo` | `rustup` | `cargo fmt` | `cargo test`| `cargo`
 
 ## Sources
 
