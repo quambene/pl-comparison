@@ -8,6 +8,7 @@ Pros and cons of widely used programming languages.
 - [Polymorphism](#polymorphism)
 - [Pointer](#pointer)
 - [Memory safety](#memory-safety)
+- [Concurrency](#concurrency)
 - [Tooling](#tooling)
 - [References](#references)
 
@@ -104,6 +105,13 @@ C | Yes | Yes | Yes
 
 - at any given time, you can have either one mutable reference or any number of immutable references
 - references must always be valid
+
+## Concurrency
+
+Language | Async/await | Multithreading
+-- | -- | --
+Python | Yes ([asyncio](https://docs.python.org/3/library/asyncio.html)) | Yes ([multiprocessing](https://docs.python.org/3/library/multiprocessing.html) and [IPC](https://en.wikipedia.org/wiki/Inter-process_communication); [thread](https://docs.python.org/3/library/_thread.html) and [threading](https://docs.python.org/3/library/threading.html) but [GIL](https://en.wikipedia.org/wiki/Global_interpreter_lock))
+Rust | Yes ([async-std](https://crates.io/crates/async-std), [tokio](https://crates.io/crates/tokio)) | Yes ([tokio](https://crates.io/crates/tokio))
 
 ## Tooling
 
