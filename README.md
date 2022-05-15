@@ -113,7 +113,7 @@ Javascript | `npm` | `nvm` | various | `eslint` | `jest`, `mocha`
 Typescript | `npm` | `nvm` | various | `eslint` | `jest`, `mocha`
 Python | `pip`, `venv`, `setuptools` | `pyenv` | `autopep8` | `mypy`, `pyright` | `pytest`
 Java | `maven`, `gradle` | -- | various | `spotbugs` | `JUnit`, `mockito`
-Go | `go` | `go` | `go fmt` | `go vet` | `go test`
+Go | `go` | `go` | `go fmt` | `go vet` | `go test`, `testify`
 Rust | `cargo` | `rustup` | `cargo fmt` | `cargo clippy` | `cargo test`
 C++ | `vcpkg`, `conan` | -- | -- | -- | --
 
