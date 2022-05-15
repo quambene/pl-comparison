@@ -9,6 +9,7 @@ Pros and cons of widely used programming languages.
 - [Pointer](#pointer)
 - [Memory safety](#memory-safety)
 - [Tooling](#tooling)
+- [References](#references)
 
 ## Performance
 
