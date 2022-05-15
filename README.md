@@ -106,11 +106,14 @@ C | Yes | Yes | Yes
 
 ## Tooling
 
-Language | Package manager | Toolchain management | Formatter | Testing
--- | -- | -- | -- | --
-Python | `pip`, `venv`, `setuptools` | `pyenv` | `autopep8` | `pytest`
-Go | `go` | `go` | `go fmt` | `go test`
-Rust | `cargo` | `rustup` | `cargo fmt` | `cargo test`| `cargo`
+Language | Package manager | Toolchain management | Formatter | Linting | Testing
+-- | -- | -- | -- | -- | --
+Javascript | `npm` | `nvm` | various | `eslint` | `jest`, `mocha`
+Typescript | `npm` | `nvm` | various | `eslint` | `jest`, `mocha`
+Python | `pip`, `venv`, `setuptools` | `pyenv` | `autopep8` | `mypy`, `pyright` | `pytest`
+Java | `maven`, `gradle` | -- | various | `spotbugs` | `JUnit`, `mockito`
+Go | `go` | `go` | `go fmt` | `go vet` | `go test`
+Rust | `cargo` | `rustup` | `cargo fmt` | `cargo clippy` | `cargo test`
 
 ## References
 
