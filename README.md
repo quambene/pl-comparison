@@ -30,10 +30,10 @@ C | AOT | No | No | slower
 
 Language | Memory safety | Type safety | Null safety | Data race safety
 -- | -- | -- | -- | --
-Javascript | Yes (GC) | weak | No | No
-Typescript | Yes (GC) | strong (in strict mode) | Yes | No
-Dart | Yes (GC) | strong | Yes | No
-Python | Yes (GC) | strong | No | No
+Javascript | Yes (GC) | weak | No | Yes (single-threaded)
+Typescript | Yes (GC) | strong (in strict mode) | Yes | Yes (single-threaded)
+Dart | Yes (GC) | strong | Yes | Yes (single-threaded)
+Python | Yes (GC) | strong | No | Yes (single-threaded)
 Java | Yes (GC) | strong | No | No
 Go | Yes (GC) | strong | No | Yes
 Rust | Yes ([RAII](https://en.wikipedia.org/wiki/Resource_acquisition_is_initialization)+[ownership](https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html)) | strong | Yes | Yes
