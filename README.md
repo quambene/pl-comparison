@@ -112,8 +112,9 @@ Python | `pip`, `venv`, `setuptools` | `pyenv` | `autopep8` | `pytest`
 Go | `go` | `go` | `go fmt` | `go test`
 Rust | `cargo` | `rustup` | `cargo fmt` | `cargo test`| `cargo`
 
-## Sources
+## References
 
 - Wikipedia, [Comparison of programming languages](https://en.wikipedia.org/wiki/Comparison_of_programming_languages)
 - Wikipedia, [Comparison of programming languages by type system](https://en.wikipedia.org/wiki/Comparison_of_programming_languages_by_type_system)
 - Peteris Krumins, [The Four Polymorphisms in C++](https://catonmat.net/cpp-polymorphism)
+- Steve Klabnik and Carol Nichols, [The Rust Programming Language](https://doc.rust-lang.org/book/)
