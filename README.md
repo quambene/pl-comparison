@@ -77,11 +77,11 @@ C | No | No | No | Yes
 
 ## Pointer
 
-Language | References | Raw pointer | Smart pointer
+Language  | Raw pointer | Smart pointer | References
 -- | -- | -- | --
-Rust | Yes | No ([unsafe Rust](https://doc.rust-lang.org/book/ch19-01-unsafe-rust.html#unsafe-rust)) | Yes (`std::boxed::Box`, `std::rc::Rc`, `std::sync::Arc`)
-C++ | Yes | Yes | Yes (`std::unique_ptr`, `std::shared_ptr`)
-C | No | Yes| No
+Rust | No ([unsafe Rust](https://doc.rust-lang.org/book/ch19-01-unsafe-rust.html#unsafe-rust)) | Yes (`std::boxed::Box`, `std::rc::Rc`, `std::sync::Arc`) | Yes
+C++ | Yes | Yes (`std::unique_ptr`, `std::shared_ptr`) | Yes
+C | Yes| No | No
 
 ## Memory safety
 
