@@ -30,7 +30,7 @@ C | AOT | No | No | slower
 Language | Memory safety | Type safety | Null safety | Data race safety
 -- | -- | -- | -- | --
 Javascript | Yes (GC) | weak | No | No
-Typescript | Yes (GC) | strong | Yes | No
+Typescript | Yes (GC) | strong (in strict mode) | Yes | No
 Dart | Yes (GC) | strong | Yes | No
 Python | Yes (GC) | strong | No | No
 Java | Yes (GC) | strong | No | No
