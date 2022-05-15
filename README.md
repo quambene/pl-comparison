@@ -85,7 +85,7 @@ C | Yes| No | No
 
 ## Memory safety
 
-Language | double free | use after free (dangling pointer) | null dereferencing
+Language | Double free | Use after free (dangling pointer) | Null dereferencing
 -- | -- | -- | --
 Java | No (GC) | No (GC) | Yes (`NullPointerException`)
 Go | No (GC) | No (GC) | Yes (`nil pointer dereference`)
