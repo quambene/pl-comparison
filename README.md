@@ -45,7 +45,7 @@ C | No | weak | No | No
 Language | Nominal/Structural | Static/Dynamic | Manifest/Inferred | Sum types
 -- | -- | -- | -- | --
 Javascript | - | dynamic | inferred | No
-Typescript | structural | static | manifest | No
+Typescript | structural | static | manifest | Yes ([discriminated union](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes-func.html#discriminated-unions))
 Dart | nominal | static | gradual | No
 Python | nominal | dynamic | inferred / optional manifest | No
 Java | nominal | static | manifest / optional inferred | No
