@@ -48,7 +48,7 @@ Pros and cons of widely used programming languages.
 | Typescript | structural                               | static         | manifest                     | Yes ([discriminated union](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes-func.html#discriminated-unions)) |
 | Dart       | nominal                                  | static         | gradual                      | No                                                                                                                               |
 | Python     | nominal                                  | dynamic        | inferred / optional manifest | No                                                                                                                               |
-| Java       | nominal                                  | static         | manifest / optional inferred | No                                                                                                                               |
+| Java       | nominal                                  | static         | manifest / optional inferred | Yes ([sealed classes](https://openjdk.java.net/jeps/409))                                                                                                                               |
 | Go         | partially structural / partially nominal | static         | partially inferred           | No                                                                                                                               |
 | Rust       | mostly nominal                           | static         | manifest / optional inferred | Yes ([enum](https://doc.rust-lang.org/std/keyword.enum.html))                                                                    |
 | C++        | nominal                                  | static         | manifest / optional inferred | No                                                                                                                               |
@@ -79,11 +79,11 @@ Four types of poylmorphism:
 
 ## Pointer
 
-| Language | Raw pointer | Smart pointer                                            | References |
-| -------- | ----------- | -------------------------------------------------------- | ---------- |
-| Rust     | Yes         | Yes (`std::boxed::Box`, `std::rc::Rc`, `std::sync::Arc`) | Yes        |
-| C++      | Yes         | Yes (`std::unique_ptr`, `std::shared_ptr`)               | Yes        |
-| C        | Yes         | No                                                       | No         |
+| Language | Raw pointer                                                                              | Smart pointer                                            | References |
+| -------- | ---------------------------------------------------------------------------------------- | -------------------------------------------------------- | ---------- |
+| Rust     | Yes ([unsafe Rust](https://doc.rust-lang.org/book/ch19-01-unsafe-rust.html#unsafe-rust)) | Yes (`std::boxed::Box`, `std::rc::Rc`, `std::sync::Arc`) | Yes        |
+| C++      | Yes                                                                                      | Yes (`std::unique_ptr`, `std::shared_ptr`)               | Yes        |
+| C        | Yes                                                                                      | No                                                       | No         |
 
 ## Memory safety
 
