@@ -1,6 +1,6 @@
 # Programming Language Comparison Cheat Sheet
 
-Pros and cons of widely used programming languages.
+Pros and cons of widely used programming languages from a technical point of view.
 
 - [Performance](#performance)
 - [Safety](#safety)
