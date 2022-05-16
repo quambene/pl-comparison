@@ -48,7 +48,7 @@ Javascript | - | dynamic | inferred | No
 Typescript | structural | static | manifest | Yes ([discriminated union](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes-func.html#discriminated-unions))
 Dart | nominal | static | gradual | No
 Python | nominal | dynamic | inferred / optional manifest | No
-Java | nominal | static | manifest / optional inferred | No
+Java | nominal | static | manifest / optional inferred | Yes ([Sealed classes](https://openjdk.java.net/jeps/409))
 Go | partially structural / partially nominal | static | partially inferred | No
 Rust | mostly nominal | static | manifest / optional inferred | Yes ([enum](https://doc.rust-lang.org/std/keyword.enum.html))
 C++ | nominal | static | manifest / optional inferred | No
