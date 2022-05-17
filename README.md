@@ -79,11 +79,11 @@ Four types of poylmorphism:
 
 ## Pointer
 
-| Language | Raw pointer                                                                              | Smart pointer                                            | References |
-| -------- | ---------------------------------------------------------------------------------------- | -------------------------------------------------------- | ---------- |
-| Rust     | Yes ([unsafe Rust](https://doc.rust-lang.org/book/ch19-01-unsafe-rust.html#unsafe-rust)) | Yes (`std::boxed::Box`, `std::rc::Rc`, `std::sync::Arc`) | Yes        |
-| C++      | Yes                                                                                      | Yes (`std::unique_ptr`, `std::shared_ptr`)               | Yes        |
-| C        | Yes                                                                                      | No                                                       | No         |
+| Language | Raw pointer                                                                              | Smart pointer                                            | References                               |
+| -------- | ---------------------------------------------------------------------------------------- | -------------------------------------------------------- | ----------                               |
+| Rust     | Yes ([unsafe Rust](https://doc.rust-lang.org/book/ch19-01-unsafe-rust.html#unsafe-rust)) | Yes (`std::boxed::Box`, `std::rc::Rc`, `std::sync::Arc`) | Yes (can't be null)                      |
+| C++      | Yes                                                                                      | Yes (`std::unique_ptr`, `std::shared_ptr`)               | Yes (can't be null, can't be reseated)   |
+| C        | Yes                                                                                      | No                                                       | No                                       |
 
 ## Memory safety
 
