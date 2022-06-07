@@ -10,6 +10,7 @@ Pros and cons of widely used programming languages from a technical point of vie
 - [Memory safety](#memory-safety)
 - [Concurrency](#concurrency)
 - [Tooling](#tooling)
+- [Terminology](#terminology)
 - [References](#references)
 
 ## Performance
@@ -130,6 +131,44 @@ Four types of poylmorphism:
 | Go         | `go`                        | `go`                 | `go fmt`                 | `go vet`          | `go test`, `testify` |
 | Rust       | `cargo`                     | `rustup`             | `rustfmt`                | `clippy`          | `cargo`              |
 | C++        | `vcpkg`, `conan`            | --                   | `clang-format`           | `clang-tidy`      | --                   |
+
+## Terminology
+
+**[Type safety](https://en.wikipedia.org/wiki/Type_safety)** (or type soundness): The extent to which a programming language discourages or prevents type errors.
+
+**Polymorphism**: A common interface to entities of different types.
+
+**Nominal type system**: A name-based type system.
+
+**Structural type system**: A property-based type system.
+
+**Type inference**: Implicit typing.
+
+**Manifest typing**: Explicit typing.
+
+**Static type checking**: Verifying the type safety at compile-time.
+
+**Dynamic type checking**: Verifying the type safety at runtime.
+
+**Strong typing**: Stricter typing rules at compile-time.
+
+**Weak typing**: Looser typing rules at compile-time.
+
+**Duck typing**: _If it walks like a duck and it quacks like a duck, then it must be a duck._
+
+**[Data race](https://doc.rust-lang.org/nomicon/races.html)**: Two or more threads concurrently accessing a location of memory; one or more of them is a write; one or more of them is unsynchronized.
+
+**Memory safety**: The extent to which a programming language protects from [memory errors](https://en.wikipedia.org/wiki/Memory_safety#Types_of_memory_errors).
+
+**[Buffer overflow](https://en.wikipedia.org/wiki/Buffer_overflow)**: An anomaly where a program, while writing data to a buffer, overruns the buffer's boundary and overwrites adjacent memory locations.
+
+**Dangling pointer** (or wild pointer): Pointers that do not point to a valid object. Null pointer, uninitialized pointer, and stale pointer are special cases of a dangling pointer.
+
+**Double free**: Calling `free` twice on the same memory address.
+
+**Use after free**: A dangling pointer that is used after it has been freed.
+
+**Null dereferencing**: Dereferencing a null pointer.
 
 ## References
 
