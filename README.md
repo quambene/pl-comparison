@@ -93,20 +93,9 @@ Four types of poylmorphism:
 | -------- | -------------------- | --------------------------------- | ------------------------------- | --------------- |
 | Java     | No (GC)              | No (GC)                           | Yes (`NullPointerException`)    | No              |
 | Go       | No (GC)              | No (GC)                           | Yes (`nil pointer dereference`) | No              |
-| Rust     | No (ownership rules) | No (borrowing rules)              | No (`std::option::Option`)      | No              |
+| Rust     | No ([ownership rules](https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html#ownership-rules)) | No ([borrowing rules](https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html#the-rules-of-references))              | No (`std::option::Option`)      | No              |
 | C++      | Yes                  | Yes                               | Yes                             | Yes             |
 | C        | Yes                  | Yes                               | Yes                             | Yes             |
-
-[Ownership rules](https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html#ownership-rules):
-
-- each value in Rust has a variable that’s called its owner
-- there can only be one owner at a time
-- when the owner goes out of scope, the value will be dropped
-
-[Borrowing rules](https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html#the-rules-of-references):
-
-- at any given time, you can have either one mutable reference or any number of immutable references
-- references must always be valid
 
 ## Concurrency
 
